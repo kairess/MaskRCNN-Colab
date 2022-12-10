@@ -2386,10 +2386,10 @@ class MaskRCNN():
             train_generator,
             initial_epoch=self.epoch,
             epochs=epochs,
-            # steps_per_epoch=self.config.STEPS_PER_EPOCH,
+            steps_per_epoch=self.config.STEPS_PER_EPOCH,
             callbacks=callbacks,
             validation_data=val_generator,
-            # validation_steps=self.config.VALIDATION_STEPS,
+            validation_steps=self.config.VALIDATION_STEPS,
             max_queue_size=100,
             workers=workers,                 #you can set workers = workers, then start the pro with multi cpu, and you should set use_multiprocessing=True
             use_multiprocessing=False #in mask cnn set true
