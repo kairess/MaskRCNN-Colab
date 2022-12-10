@@ -81,6 +81,7 @@ class CustomConfig(Config):
 
     def __init__(self, num_classes):
         self.NUM_CLASSES = num_classes
+        self.ETF_C = num_classes + 1
 
         super().__init__()
 
